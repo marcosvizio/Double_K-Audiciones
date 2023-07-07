@@ -104,3 +104,23 @@ body{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
+
+.auditionsForm--download{
+    display: block;
+    width: auto;
+    background-color:white;
+    color: black;
+    border-radius: 0.3rem;
+    box-shadow:0rem 0rem 4rem 0rem black;
+    padding: 0.5rem 1rem;
+}
+
+.auditionsForm--download:hover{
+    animation-name: animacionSubmit;
+        animation-duration: 600ms;
+        animation-direction: normal;
+        animation-timing-function: linear; 
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+}

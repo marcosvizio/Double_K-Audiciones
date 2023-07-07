@@ -11,11 +11,13 @@ dotenv.config();
 
 const app = express();
 
-const PASSWORD = process.env.PASSWORD
+const URL_MONGO = process.env.URL_MONGO
 
-mongoose.connect(`mongodb+srv://marcosfvizio:${PASSWORD}@cluster0.vdd5ngb.mongodb.net/doublek?retryWrites=true&w=majority`)
+const PORT = process.env.PORT || 3000
 
-app.listen(8080, ()=> console.log('Server running on port 8080'));
+mongoose.connect(URL_MONGO)
+
+app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
