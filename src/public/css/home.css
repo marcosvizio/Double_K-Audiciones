@@ -1,0 +1,106 @@
+body{
+    background-image: url(../images/fondo.png);
+    font-family: glitchFont;
+    color: white;
+}
+
+@keyframes animacionSubmit {
+    from {
+        background-color: whitesmoke;
+    }
+    to {
+        background-color: rgb(133, 133, 245);
+    }
+}
+
+@font-face {
+    font-family: glitchFont;
+    src: url(../fonts/Glitch\ inside.otf);
+}
+
+.auditionsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auditionsForm--div{
+    border: 0.2rem solid rgb(133, 133, 245);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 4rem 0rem black;
+}
+
+.auditionsForm--title{
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+    font-size: 2.5rem;
+}
+
+.auditionsForm--form{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    border: 0.3rem;
+}
+
+.auditionsForm--form__label{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.auditionsForm--form__labelEdadAclaracion{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.6rem;
+    font-weight:bold;
+    margin-left: 0.1rem;
+    margin-bottom: 0.3rem;
+    color: rgb(193, 192, 192);
+}
+
+.auditionsForm--form__input{
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    border-color: black;
+}
+
+.auditionsForm--form__inputDate{
+    font-family: glitchFont;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    border-color: black;
+    cursor: text;
+}
+
+.auditionsForm--form__labelNombre{
+    margin-bottom: 0.5rem;
+}
+
+.auditionsForm--form__submit{
+    cursor: pointer;
+    font-family: glitchFont;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    border-color: black;
+    box-shadow:0rem 0rem 4rem 0rem black;
+}
+
+.auditionsForm--form__submit:hover{
+    animation-name: animacionSubmit;
+        animation-duration: 600ms;
+        animation-direction: normal;
+        animation-timing-function: linear; 
+        animation-iteration-count: 1;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+}
+
+.auditionsForm--form__spanSubmit{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.7rem;
+    font-weight:bold;
+    margin-left: 0.1rem;
+    color: rgb(193, 192, 192);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
