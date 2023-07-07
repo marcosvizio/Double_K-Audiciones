@@ -13,7 +13,10 @@
             ],
             "program": "${workspaceFolder}\\src\\app.js",
             "restart": true,
-            "runtimeExecutable": "nodemon"
+            "runtimeExecutable": "nodemon",
+            "env": {
+                
+            }
         }
     ]
 }
