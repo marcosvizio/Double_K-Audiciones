@@ -110,6 +110,7 @@ body{
     width: auto;
     background-color:white;
     color: black;
+    margin-bottom: 2rem;
     border-radius: 0.3rem;
     box-shadow:0rem 0rem 4rem 0rem black;
     padding: 0.5rem 1rem;
@@ -127,4 +128,14 @@ body{
 
 .auditionsForm--finishText{
     font-size: medium;
+}
+
+.auditionsForm--finishTitleWarning{
+    color: red;
+}
+
+.auditionsForm--finishTextWarning{
+    font-size: medium;
+    color: red;
+    margin-bottom: 2rem;
 }
