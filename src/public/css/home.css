@@ -1,14 +1,18 @@
 body{
     background-image: url(../images/fondo.png);
     font-family: glitchFont;
-    color: white;
+    color: rgb(255, 175, 90);
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 @media screen and (max-width:720px) {
     body{
         background-image: url(../images/fondo.png);
         background-position: center top;
-        font-family: glitchFont;
+        color: rgb(255, 175, 90);
         color: white;
     }
 }
@@ -18,13 +22,8 @@ body{
         background-color: whitesmoke;
     }
     to {
-        background-color: rgb(133, 133, 245);
+        background-color: rgb(255, 177, 83);
     }
-}
-
-@font-face {
-    font-family: glitchFont;
-    src: url(../fonts/Glitch\ inside.otf);
 }
 
 .auditionsForm{
@@ -56,6 +55,7 @@ body{
 .auditionsForm--form__label{
     margin-top: 2rem;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .auditionsForm--form__labelEdadAclaracion{
@@ -64,7 +64,7 @@ body{
     font-weight:bold;
     margin-left: 0.1rem;
     margin-bottom: 0.3rem;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .auditionsForm--form__input{
@@ -74,7 +74,10 @@ body{
 }
 
 .auditionsForm--form__inputDate{
-    font-family: glitchFont;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     padding: 0.2rem;
     border-radius: 0.3rem;
     border-color: black;
@@ -83,11 +86,15 @@ body{
 
 .auditionsForm--form__labelNombre{
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .auditionsForm--form__submit{
     cursor: pointer;
-    font-family: glitchFont;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
     padding: 0.4rem;
     border-radius: 0.3rem;
     border-color: black;
@@ -109,7 +116,7 @@ body{
     font-size: 0.8rem;
     font-weight:bold;
     margin-left: 0.1rem;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }

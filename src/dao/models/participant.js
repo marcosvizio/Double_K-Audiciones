@@ -8,7 +8,7 @@ const schema = new mongoose.Schema({
     birthdate: String,
     age: Number,
     email: String,
-    video_link: String
+    instagram: String
 }, {timestamps: {createdAt: 'created_at', updated_at: 'updated_at'}});
 
 const participantModel = mongoose.model(collection, schema);
