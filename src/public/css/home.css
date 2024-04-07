@@ -97,7 +97,6 @@ body{
     font-style: normal;
     padding: 0.4rem;
     border-radius: 0.3rem;
-    border-color: black;
     box-shadow:0rem 0rem 1rem 0rem black;
 }
 
@@ -130,6 +129,7 @@ body{
     border-radius: 0.3rem;
     box-shadow:0rem 0rem 4rem 0rem black;
     padding: 0.5rem 1rem;
+    font-weight: bold;
 }
 
 .auditionsForm--download:hover{
@@ -147,11 +147,11 @@ body{
 }
 
 .auditionsForm--finishTitleWarning{
-    color: red;
+    color: white;
 }
 
 .auditionsForm--finishTextWarning{
     font-size: medium;
-    color: red;
+    color: white;
     margin-bottom: 2rem;
 }
