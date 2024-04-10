@@ -82,6 +82,7 @@ body{
     font-weight: 400;
     font-style: normal;
     border-radius: 0.8rem;
+    margin-bottom: 2.5rem;
     border-color: rgb(255, 177, 83);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);
 }
