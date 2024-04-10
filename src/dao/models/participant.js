@@ -5,10 +5,12 @@ const collection = 'Participants';
 const schema = new mongoose.Schema({
     first_name: String,
     last_name: String,
+    pronouns: String,
     birthdate: String,
     age: Number,
     email: String,
-    instagram: String
+    instagram: String,
+    health_history: String
 }, {timestamps: {createdAt: 'created_at', updated_at: 'updated_at'}});
 
 const participantModel = mongoose.model(collection, schema);

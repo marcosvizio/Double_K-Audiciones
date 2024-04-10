@@ -2,7 +2,8 @@ body{
     background-image: url(../images/fondo.png);
     background-position: center top;
     color: rgb(255, 175, 90);
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
@@ -49,6 +50,7 @@ body{
     flex-direction: column;
     font-size: large;
     border: 0.5rem;
+    max-width: 30rem;
 }
 
 .auditionsForm--form__label{
@@ -58,7 +60,8 @@ body{
 }
 
 .auditionsForm--form__labelEdadAclaracion{
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     margin-left: 0.1rem;
@@ -68,17 +71,27 @@ body{
 
 .auditionsForm--form__input{
     padding: 0.2rem;
-    border-radius: 0.3rem;
-    border-color: black;
+    border-radius: 0.8rem;
+    border-color: rgb(255, 177, 83);
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);
+}
+
+.auditionsForm--form__inputHealth{
+    padding: 2.5rem;
+    border-radius: 0.8rem;
+    border-color: rgb(255, 177, 83);
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);
 }
 
 .auditionsForm--form__inputDate{
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     padding: 0.2rem;
-    border-radius: 0.3rem;
-    border-color: black;
+    border-radius: 0.8rem;
+    border-color: rgb(255, 177, 83);
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);
     cursor: text;
 }
 
@@ -89,12 +102,14 @@ body{
 
 .auditionsForm--form__submit{
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
-    padding: 0.4rem;
-    border-radius: 0.3rem;
-    box-shadow:0rem 0rem 1rem 0rem black;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    border-color: rgb(255, 140, 0);
+    box-shadow:0.3rem 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.5);
     margin-bottom: 1.5rem;
 }
 
@@ -109,12 +124,23 @@ body{
 }
 
 .auditionsForm--form__spanSubmit{
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     margin-left: 0.1rem;
     color: rgb(255, 255, 255);
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.auditionsForm--form__span{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 0.1rem;
+    color: rgb(255, 255, 255);
     margin-bottom: 0.5rem;
 }
 

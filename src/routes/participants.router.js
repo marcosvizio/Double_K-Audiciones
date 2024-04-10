@@ -15,7 +15,7 @@ router.post('/register', async (req, res) => {
                 message: "Can't upload the participant!"
             })
         } else {
-            const participant = await participantManager.createParticipant(newParticipant)    
+            const participant = await participantManager.createParticipant(newParticipant); 
             res.status(200).send({
                 status: 'success',
                 message: 'Participant added!',
@@ -26,5 +26,8 @@ router.post('/register', async (req, res) => {
         console.log(error);
     }
 })
+
+
+
 
 export default router;

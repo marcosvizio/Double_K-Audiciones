@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import handlebars from 'express-handlebars';
 import * as dotenv from 'dotenv';
 
+
 import viewsRouter from './routes/views.router.js';
 import participantsRouter from './routes/participants.router.js'
 import __dirname from './utils.js';
