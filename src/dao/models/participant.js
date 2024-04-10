@@ -6,8 +6,7 @@ const schema = new mongoose.Schema({
     first_name: String,
     last_name: String,
     pronouns: String,
-    birthdate: String,
-    age: Number,
+    birthdate: Date,
     email: String,
     instagram: String,
     health_history: String

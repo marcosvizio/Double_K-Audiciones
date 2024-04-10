@@ -8,8 +8,4 @@ export default class ParticipantsManager {
     getParticipant = (params) => {
         return participantModel.findOne(params)
     }
-
-    getParticipants = (params) => {
-        return participantModel.find(params).lean()
-    }
 }

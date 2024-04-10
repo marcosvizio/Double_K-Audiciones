@@ -3,11 +3,17 @@ const form = document.getElementById('auditionForm');
 form.addEventListener('submit', async event => {
     event.preventDefault();
     const data = new FormData(form);
+    const obj = {};
+    data.forEach((value, key) => (obj[key] = value))
     const response = await fetch('/api/participants/register', {
         method: 'POST',
-        body: data
+        body: JSON.stringify(obj),
+        headers: {
+            "Content-Type": "application/json"
+        }
     });
-    if (response.ok) {
+    const responseData = await response.json()
+    if (responseData.status === 'success') {
         window.location.replace('/finish')
     } else {
         Swal.fire({
