@@ -30,6 +30,7 @@ router.get('/finish', (req, res)=>{
 router.get('/8nYs3qA9xR', async (req,res)=>{
     try {
         const participants = await participantManager.getParticipants();
+        console.log(participants);
         res.status(200).render('participants', {
             css: 'home',
             title: "Double K' || Audiciones",
