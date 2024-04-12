@@ -1,0 +1,23 @@
+<div>
+    <h1 style="text-align:center; color:orange">Participantes</h1>
+    {{#if participants}}
+        <div class="participants__card-container">
+        {{#each participants}}
+                <div class="card" class="participant__card" style="width: 20rem;margin: 0.5rem; display:flex">
+                    <div class="card-body">
+                        <p class="card-text">Nombre/s: {{this.first_name}}</p>
+                        <p class="card-text">Apellido: {{this.last_name}}</p>
+                        <p class="card-text">Pronombres: {{this.pronouns}}</p>
+                        <p class="card-text">Fecha de nacimiento: {{this.birthdate}}</p>
+                        <p class="card-text">E-mail: {{this.email}}</p>
+                        <p class="card-text">Instagram: {{this.instagram}}</p>
+                        <p class="card-text">Historial de salud: {{this.health_history}}</p>
+                    </div>
+                </div>
+        {{/each}}
+        </div>
+    {{/if}}
+</div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
